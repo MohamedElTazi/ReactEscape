@@ -1,49 +1,43 @@
 import Logo from '../images/logo.png';
 import '../css/footer.css'
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 
 function Footer() {
-    return (
-<>
-<footer>
-  <div className="">
-    <div className="row">
-      <div className="col-md-3 col-sm-12 mb-3 text-center">
-      <div className="logo">
-                      <a href="#">
-                        <img src={Logo} alt="logo" style={{ width: '200px', height: 'auto' }}/>
-                      </a>
-                    </div>
+return (
+    <div className="footer">
+      <div className="sb_footer section_padding">
+        <div className="sb_footer-links">
+        <div className="sb_footer-links_div">
+            <h4>Entreprise</h4>
+            <p>contact.evasionmystique @email.com</p>
+            <p>242 rue du Faubourg Saint-Antoine, 75012 Paris</p>
+            <p>06 06 06 06 06</p>
+          </div>
+          <div className="sb_footer-links_div">
+            <h4>Nous trouver</h4>
+            <a href="https://www.google.com/maps/dir//242+Rue+du+Faubourg+Saint-Antoine,+75012+Paris/@48.8491372,2.3073339,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e6720d9c7af387:0x5891d8d62e8535c7!2m2!1d2.3897343!2d48.8491666?hl=fr&entry=ttu" target='blank'><p>Google Maps</p></a>
+            <p>Métro : 1, 2, 6, 9 </p>
+            <p>RER : A</p>
+            <p>Bus : 57, N11</p>
+          </div>
+          <div className="sb_footer-links_div">
+            <h4>Coming soon on</h4>
+          </div>
+          <div className="socialmedia">
+            <a href="https://www.facebook.com/" target='blank'><FaFacebook/></a>
+            <a href="https://www.twitter.com/" target='blank'><FaTwitter/></a>
+            <a href="https://www.instagram.com/" target='blank'><FaInstagram/></a>
+          </div>
+        </div>
       </div>
-      <div className="col-md-9 col-sm-12" id = "footerRow">
 
-        <div className="section">
-          <h5 className="name">Evasion Mystique</h5>
-        <ul className="list-group">
-          <li className="items"><a href="">About</a></li>
-          <a className="items" href="#">Privacy & terms</a>
-        </ul>
-        </div>
-
-        <div className="section">
-          <h5 className="name">Réseaux sociaux</h5>
-        <ul className="list-group">
-          <li className="items">
-            <a href="https://www.instagram.com/"><i className="fa fa-instagram mr-1"></i> Instagram</a>
-          </li>
-          <li className="items">
-            <a href="https://twitter.com/"><i className="fa fa-twitter mr-1"></i> Twitter</a>       
-          </li >
-          
-          <li className="items">
-            <a href="https://www.facebook.com/naologic/" target="_blank"><i className="fa fa-facebook mr-1"></i> Facebook</a>
-          </li>
-        </ul>
-        </div>
-        </div>
+      <hr></hr>
+      <div className='sb__footer-below-links'>
+        <a href='/terms'><div><p>Terms & Condition</p></div></a>
+      </div>
     </div>
-  </div>
-</footer>
-</>
+
 
 )
 };

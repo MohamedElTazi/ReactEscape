@@ -1,4 +1,4 @@
-import '../App.css'; // Assurez-vous de lier votre fichier CSS
+import '../css/offer.css'; // Assurez-vous de lier votre fichier CSS
 
 function Offer() {
   return (

@@ -1,6 +1,6 @@
 // Header.tsx
-import React from 'react';
 import '../App.css';
+import { Link } from 'react-scroll';
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
         <h2><span>Osez</span> l'aventure, </h2>
         <h2><span>défiez</span> le mystère</h2>
         <div className='header-btns'>
-          <a href='contact' className='header-btn'>Reserver</a>
+          <Link to='Booking' className='header-btn' smooth={true} duration={1000}>Reservez</Link>
         </div>  
       </div>
     </div>

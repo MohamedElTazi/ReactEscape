@@ -1,5 +1,5 @@
 // Contact.tsx
-import '../App.css';
+import '../css/contact.css';
 
 function Contact() {
   return (
